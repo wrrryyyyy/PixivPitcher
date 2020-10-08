@@ -1,0 +1,4 @@
+smtp_host,smtp.qq.com, 
+from_addr,youremill@qq.com, 
+send_addr,youremill@qq.com, 
+password,yourPasswordFromSmtpHost, 

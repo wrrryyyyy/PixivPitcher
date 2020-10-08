@@ -1,0 +1,75 @@
+写个通用的库出来 把各个模块 功能区分一下
+基础功能
+模拟登录 或者怼cookie v
+目前实现的最终形态是爬日榜的单图 提取出比例合适的抓下来
+日榜爬取
+page内容爬取（主要是url）
+photo下载（路径之类的）
+多线程下载分配（这个可以先不搞）
+加个自动发送邮件的 
+{"code":0,"message":"0","ttl":1,"data":{"mid":11941487,"following":40,"whisper":0,"black":0,"follower":7398}}
+
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+cookie: bfe_id=1bad38f44e358ca77469025e0405c4a6; _uuid=37FD778F-1E6B-E2FE-1653-08B66B49577833194infoc; buvid3=24AB2F0A-CB6C-4207-A5CF-F1EC22028022143107infoc
+origin: https://space.bilibili.com
+referer: https://space.bilibili.com/11941487
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 Edg/84.0.522.59
+====================================
+
+:authority: space.bilibili.com
+:method: GET
+:path: /11941487
+:scheme: https
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+cache-control: max-age=0
+cookie: finger=-53268994; _uuid=4BFD5002-B1A2-AE70-7CD7-CE2D5B68ACDC34269infoc; buvid3=0A8BCC4C-1BD9-411F-9874-2F69E6E23745143109infoc
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 Edg/84.0.522.59
+
+=========================================
+请求 URL: https://api.bilibili.com/x/web-show/res/locs?pf=0&ids=142%2C2837%2C2836%2C2870%2C2953%2C2954%2C2955%2C2956
+请求方法: GET
+状态代码: 200 
+远程地址: 139.159.246.60:443
+引用站点策略: no-referrer-when-downgrade
+access-control-allow-credentials: true
+access-control-allow-headers: Origin,No-Cache,X-Requested-With,If-Modified-Since,Pragma,Last-Modified,Cache-Control,Expires,Content-Type,Access-Control-Allow-Credentials,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Cache-Webcdn,x-bilibili-key-real-ip
+access-control-allow-methods: GET,POST
+access-control-allow-origin: https://space.bilibili.com
+bili-status-code: 0
+bili-trace-id: 3c0d5815515f40d4
+cache-control: no-cache
+content-length: 743
+content-type: application/json; charset=utf-8
+date: Sat, 22 Aug 2020 08:18:54 GMT
+expires: Sat, 22 Aug 2020 08:18:53 GMT
+set-cookie: bfe_id=6f285c892d9d3c1f8f020adad8bed553; Path=/; Max-Age=600; Expires=Sat, 22-Aug-20 08:28:54 GMT
+status: 200
+vary: Origin
+x-cache-webcdn: BYPASS from hw-gz3-webcdn-07
+:authority: api.bilibili.com
+:method: GET
+:path: /x/web-show/res/locs?pf=0&ids=142%2C2837%2C2836%2C2870%2C2953%2C2954%2C2955%2C2956
+:scheme: https
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+origin: https://space.bilibili.com
+referer: https://space.bilibili.com/11941487
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 Edg/84.0.522.59
+pf: 0
+ids: 142,2837,2836,2870,2953,2954,2955,2956
